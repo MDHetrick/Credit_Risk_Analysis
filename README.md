@@ -46,7 +46,7 @@ avg / total       0.99      0.58      0.71      0.73      0.64      0.41     172
 #### SMOTE
 - **Accuracy Score:**  0.6586230769943224
 
-![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_AS.png)
+![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_AS2.png)
 
 - **Confusion Matrix:** 
 ```
@@ -54,7 +54,7 @@ array([[   64,    37],
        [ 5412, 11692]], dtype=int64)
 ```
 
-![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_CM.png)
+![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_CM2.png)
 
 - **Imbalanced Classification Report:**
 ```
@@ -66,7 +66,7 @@ array([[   64,    37],
 avg / total       0.99      0.68      0.63      0.81      0.66      0.44     17205
 ```
 
-![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_CR.png)
+![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_CR2.png)
 
 
 #### Cluster Centroids

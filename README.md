@@ -17,11 +17,7 @@ The majority (high_risk) and minority (low_risk) classes are balanced as the mod
 
 
 - **Confusion Matrix:** 
-```         Predicted  Predicted
-              T           F
-Actual T  [[  72,        29],
-Actual F    [7185,     9919]], dtype=int64) 
- 
+```         
 array([[  72,   29],
          [7185, 9919]], dtype=int64)                               
 ```
@@ -184,13 +180,113 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
 
 ## Summary
 ### Accuracy Scores
+**Interpretation** Percent of times the model predicted the outcome correctly
 - **Random OverSampling:** 0.6464
 - **SMOTE:**  0.6361
 - **Cluster Centroids:** 0.54406
 - **SMOTEEN:** 0.6361059
 - **Balanced Random Forest Classifier:** 0.7885
 - **Easy Ensemble Classifier:** 0.93166
+### Confusion Matrices
+**Interpretation**
+```
+           Predicted  Predicted
+              T           F
+Actual T  [[  72,        29],
+Actual F    [7185,     9919]] 
+```
 
+- **Random OverSampling Model:** 
+```        
+array([[  72,   29],
+         [7185, 9919]], dtype=int64)                               
+```
+- **SMOTE:** 
+```
+array([[   64,    37],
+       [ 5412, 11692]], dtype=int64)
+```
+
+- **Cluster Centroids:** 
+```
+array([[   70,    31],
+       [10347,  6757]], dtype=int64)
+```
+- **SMOTEEN:** 
+```
+array([[   69,    32],
+       [ 7029, 10075]], dtype=int64)
+```
+- **Balanced Random Forest Classifier:** 
+```
+array([[   71,    30],
+       [ 2153, 14951]], dtype=int64)
+```
+- **Easy Ensemble Classifier:** 
+```
+array([[   93,     8],
+       [  983, 16121]], dtype=int64)
+```
+### Imbalanced Classification Reports
+**Interpretation**
+  - Precision (pre): AKA positive predictive value
+  - Recall (rec): AKA sensitivity - measure of how many categorized are correct
+  - F1 (harmonic mean): single summary statistic of precision and sensitivity - highest f1 is overall best model
+- **Random OverSampling Model:** 
+```
+                   pre       rec       spe        f1       geo       iba       sup
+
+  high_risk       0.01      0.71      0.58      0.02      0.64      0.42       101
+   low_risk       1.00      0.58      0.71      0.73      0.64      0.41     17104
+
+avg / total       0.99      0.58      0.71      0.73      0.64      0.41     17205
+```
+
+- **SMOTE:**
+```
+                   pre       rec       spe        f1       geo       iba       sup
+
+  high_risk       0.01      0.63      0.68      0.02      0.66      0.43       101
+   low_risk       1.00      0.68      0.63      0.81      0.66      0.44     17104
+
+avg / total       0.99      0.68      0.63      0.81      0.66      0.44     17205
+```
+- **Cluster Centroids:**
+```
+                   pre       rec       spe        f1       geo       iba       sup
+
+  high_risk       0.01      0.69      0.40      0.01      0.52      0.28       101
+   low_risk       1.00      0.40      0.69      0.57      0.52      0.27     17104
+
+avg / total       0.99      0.40      0.69      0.56      0.52      0.27     17205
+```
+- **SMOTEEN:**
+```
+                   pre       rec       spe        f1       geo       iba       sup
+
+  high_risk       0.01      0.68      0.59      0.02      0.63      0.41       101
+   low_risk       1.00      0.59      0.68      0.74      0.63      0.40     17104
+
+avg / total       0.99      0.59      0.68      0.74      0.63      0.40     17205
+```
+- **Balanced Random Forest Classifier:** 
+```
+                   pre       rec       spe        f1       geo       iba       sup
+
+  high_risk       0.03      0.70      0.87      0.06      0.78      0.60       101
+   low_risk       1.00      0.87      0.70      0.93      0.78      0.62     17104
+
+avg / total       0.99      0.87      0.70      0.93      0.78      0.62     17205
+```
+- **Easy Ensemble Classifier:** 
+```
+                   pre       rec       spe        f1       geo       iba       sup
+
+  high_risk       0.09      0.92      0.94      0.16      0.93      0.87       101
+   low_risk       1.00      0.94      0.92      0.97      0.93      0.87     17104
+
+avg / total       0.99      0.94      0.92      0.97      0.93      0.87     17205
+```
 
 
 Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.

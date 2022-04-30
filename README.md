@@ -63,31 +63,32 @@ avg / total       0.99      0.68      0.63      0.81      0.66      0.44     172
 
 ### Cluster Centroids
 
-- **Accuracy Score:** 0.544061547759079
+- **Accuracy Score:** 0.5439153831192286
   - This model was correct 54.4% of the time
   
   
-![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/CC_AS.png)
+![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/CC_AS2.png)
 
 - **Confusion Matrix:** 
 ```
 array([[   70,    31],
-       [10347,  6757]], dtype=int64)
+       [10352,  6752]], dtype=int64)
 ```
 
-![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/CC_CM.png)
+![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/CC_CM2.png)
 
 - **Imbalanced Classification Report:**
 ```
                    pre       rec       spe        f1       geo       iba       sup
 
-  high_risk       0.01      0.69      0.40      0.01      0.52      0.28       101
-   low_risk       1.00      0.40      0.69      0.57      0.52      0.27     17104
+  high_risk       0.01      0.69      0.39      0.01      0.52      0.28       101
+   low_risk       1.00      0.39      0.69      0.57      0.52      0.27     17104
 
 avg / total       0.99      0.40      0.69      0.56      0.52      0.27     17205
+
 ```
 
-![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/CC_CR.png)
+![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/CC_CR2.png)
 
 ### Predicting Credit Risk using SMOTEEN
 - **Accuracy Score:** 0.6361059077142514
@@ -179,11 +180,11 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
 ### Accuracy Scores
 **Interpretation** Percent of times the model predicted the outcome correctly
 - **Random OverSampling:** 0.6464
-- **SMOTE:**  0.6361
-- **Cluster Centroids:** 0.54406
-- **SMOTEEN:** 0.6361059
+- **SMOTE:**  0.6586
+- **Cluster Centroids:** 0.5439
+- **SMOTEEN:** 0.6361
 - **Balanced Random Forest Classifier:** 0.7885
-- **Easy Ensemble Classifier:** 0.93166
+- **Easy Ensemble Classifier:** 0.9317
 ### Confusion Matrices
 **Interpretation**
 ```
@@ -252,10 +253,11 @@ avg / total       0.99      0.68      0.63      0.81      0.66      0.44     172
 ```
                    pre       rec       spe        f1       geo       iba       sup
 
-  high_risk       0.01      0.69      0.40      0.01      0.52      0.28       101
-   low_risk       1.00      0.40      0.69      0.57      0.52      0.27     17104
+  high_risk       0.01      0.69      0.39      0.01      0.52      0.28       101
+   low_risk       1.00      0.39      0.69      0.57      0.52      0.27     17104
 
 avg / total       0.99      0.40      0.69      0.56      0.52      0.27     17205
+
 ```
 - **SMOTEEN:**
 ```

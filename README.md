@@ -267,7 +267,7 @@ array([[   93,     8],
   - high risk: 0.92
   - low risk: 0.94
 #### F1 (harmonic mean)
-- The easy ensemble classifier model has the highest harmonic mean or all models
+- The easy ensemble classifier model has the highest harmonic mean of all models
 - **Random OverSampling:** 
   - Avg/total: 0.73
   - high risk: 0.02

@@ -290,4 +290,4 @@ Because the goal of this analysis is to effectively minimize the number of high 
 - Based on the accuracy scores, the easy ensemble classifier model was optimal, with an accuracy score of 93.2% 
 - Based on the confusion matrices, the model that has the least falsely classified high risk is the easy ensemble classifier with 8 high risk misclassified as low risk
 - Based on the imbalanced classification reports, the easy ensemble classifier model has the highest precision, recall, and f1(harmonic mean), indicating this model has more correctly categorized predictions than the other models
-Using the information obtained from the accuracy scores, confusion matrices, and imbalanced classification reports, the easy ensemble classifier model outperforms the other models in this analysis.
+- **Summary:** Using the information obtained from the accuracy scores, confusion matrices, and imbalanced classification reports, the easy ensemble classifier model outperforms the other models in this analysis.

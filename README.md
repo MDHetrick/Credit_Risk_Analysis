@@ -4,13 +4,23 @@ The purpose of this analysis is to use a variety of techniques to evaluate and p
 
 ## Results
 ### Resampling Models
-#### Random OverSampler
+#### Random OverSampling Model
+**Model Description**
+
+The majority (high_risk) and minority (low_risk) classes are balanced as the model randomly adds instances of the minority class to the training set.
+
+
 - **Accuracy Score:** 0.6463970560994359
+  - This model was correct 64.6% of the time
 
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/ROS_AS.png)
 
 - **Confusion Matrix:** 
-``` 
+```         Predicted  Predicted
+              T           F
+Actual T  [[  72,        29],
+Actual F    [7185,     9919]], dtype=int64) 
+ 
 array([[  72,   29],
          [7185, 9919]], dtype=int64)                               
 ```
@@ -26,10 +36,14 @@ array([[  72,   29],
 avg / total       0.99      0.58      0.71      0.73      0.64      0.41     17205
 ```
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/ROS_CR2.png)
+  - Precision (pre): AKA positive predictive value
+  - Recall (rec): AKA sensitivity - measure of how many categorized are correct
+  - F1 (harmonic mean): single summary statistic of precision and sensitivity - highest f1 is overall best model
+
 
 #### SMOTE
 - **Accuracy Score:**  0.6361059077142514
-
+  - This model was correct 63.6% of the time
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_AS.png)
 
 - **Confusion Matrix:** 
@@ -56,7 +70,7 @@ avg / total       0.99      0.59      0.68      0.74      0.63      0.40     172
 #### Cluster Centroids
 
 - **Accuracy Score:** 0.544061547759079
-
+  - This model was correct 54.4% of the time
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/CC_AS.png)
 
 - **Confusion Matrix:** 
@@ -81,7 +95,7 @@ avg / total       0.99      0.40      0.69      0.56      0.52      0.27     172
 
 ### Predicting Credit Risk using SMOTEEN
 - **Accuracy Score:** 0.6361059077142514
-
+  - This model was correct 63.6% of the time
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/SM_AS.png)
 
 
@@ -106,7 +120,7 @@ avg / total       0.99      0.59      0.68      0.74      0.63      0.40     172
 ### Using Ensemble Classifiers to Predict Credit Risk
 #### Balanced Random Forest Classifier
 - **Accuracy Score:** 0.7885466545953005
-
+  - This model was correct 78.8% of the time
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/BRFC_AS.png)
 
 - **Confusion Matrix:** 
@@ -136,7 +150,7 @@ avg / total       0.99      0.87      0.70      0.93      0.78      0.62     172
 
 #### Easy Ensemble Classifier
 - **Accuracy Score:** 0.9316600714093861
-
+  - This model was correct 93.2% of the time
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/EEC_AS.png)
 
 - **Confusion Matrix:** 
@@ -160,6 +174,16 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/EEC_CR.png)
 
 ## Summary
+### Accuracy Scores
+- **Random OverSampling:** 0.6464
+- **SMOTE:**  0.6361
+- **Cluster Centroids:** 0.54406
+- **SMOTEEN:** 0.6361059
+- **Balanced Random Forest Classifier:** 0.7885
+- **Easy Ensemble Classifier:** 0.93166
+
+
+
 Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
 There is a summary of the results (2 pt)
 There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)

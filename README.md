@@ -181,7 +181,7 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
   - **Balanced Random Forest Classifier:** 0.7885
   - **Easy Ensemble Classifier:** 0.9317
 ### Confusion Matrices
--  Based on the confusion matrices, the model that has the least falsely classified high risk is the easy ensemble classifier with 8 high risk misclassified as low risk
+-  Based on the confusion matrices, the the easy ensemble classifier model has the fewest falsely classified
   - **Random OverSampling Model:** 
 ```        
 array([[  72,   29],

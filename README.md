@@ -4,11 +4,6 @@ The purpose of this analysis is to use a variety of techniques to evaluate and p
 
 ## Results
 ### Random OverSampling Model
-**Model Description**
-
-The majority (high_risk) and minority (low_risk) classes are balanced as the model randomly adds instances of the minority class to the training set.
-
-
 - **Accuracy Score:** 0.6463970560994359
   - This model was correct 64.6% of the time
 
@@ -186,14 +181,6 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
 - **Balanced Random Forest Classifier:** 0.7885
 - **Easy Ensemble Classifier:** 0.9317
 ### Confusion Matrices
-**Interpretation**
-```
-           Predicted  Predicted
-              HR           LR
-Actual HR  [[  72,        29],
-Actual LR    [7185,     9919]] 
-```
-
 - **Random OverSampling Model:** 
 ```        
 array([[  72,   29],
@@ -226,10 +213,6 @@ array([[   93,     8],
        [  983, 16121]], dtype=int64)
 ```
 ### Imbalanced Classification Reports
-**Interpretation**
-  - Precision (pre): AKA positive predictive value
-  - Recall (rec): AKA sensitivity - measure of how many categorized are correct
-  - F1 (harmonic mean): single summary statistic of precision and sensitivity - highest f1 is overall best model
 - **Random OverSampling Model:** 
 ```
                    pre       rec       spe        f1       geo       iba       sup

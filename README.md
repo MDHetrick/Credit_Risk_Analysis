@@ -1,6 +1,6 @@
 # Credit Risk Analysis
 ## Overview
-The purpose of this analysis is to use a variety of techniques to evaluate and predict credit risk using a dataset from Lendingclub.
+The purpose of this analysis is to use a variety of techniques to evaluate and predict credit risk using a dataset from LendingClub.
 
 ## Results
 ### Random OverSampling Model

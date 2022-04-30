@@ -25,7 +25,7 @@ array([[  72,   29],
 
 avg / total       0.99      0.58      0.71      0.73      0.64      0.41     17205
 ```
-![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/ROS_CR.png)
+![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/ROS_CR2.png)
 
 #### SMOTE
 - **Accuracy Score:**  0.6361059077142514

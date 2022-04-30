@@ -73,6 +73,8 @@ avg / total       0.99      0.68      0.63      0.81      0.66      0.44     172
 
 - **Accuracy Score:** 0.544061547759079
   - This model was correct 54.4% of the time
+  
+  
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/CC_AS.png)
 
 - **Confusion Matrix:** 
@@ -98,6 +100,8 @@ avg / total       0.99      0.40      0.69      0.56      0.52      0.27     172
 ### Predicting Credit Risk using SMOTEEN
 - **Accuracy Score:** 0.6361059077142514
   - This model was correct 63.6% of the time
+
+
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/SM_AS.png)
 
 
@@ -123,6 +127,8 @@ avg / total       0.99      0.59      0.68      0.74      0.63      0.40     172
 #### Balanced Random Forest Classifier
 - **Accuracy Score:** 0.7885466545953005
   - This model was correct 78.8% of the time
+
+
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/BRFC_AS.png)
 
 - **Confusion Matrix:** 
@@ -153,6 +159,8 @@ avg / total       0.99      0.87      0.70      0.93      0.78      0.62     172
 #### Easy Ensemble Classifier
 - **Accuracy Score:** 0.9316600714093861
   - This model was correct 93.2% of the time
+
+
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/EEC_AS.png)
 
 - **Confusion Matrix:** 

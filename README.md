@@ -33,9 +33,6 @@ array([[  72,   29],
 avg / total       0.99      0.58      0.71      0.73      0.64      0.41     17205
 ```
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/ROS_CR2.png)
-  - Precision (pre): AKA positive predictive value
-  - Recall (rec): AKA sensitivity - measure of how many categorized are correct
-  - F1 (harmonic mean): single summary statistic of precision and sensitivity - highest f1 is overall best model
 
 
 ### SMOTE
@@ -191,9 +188,9 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
 **Interpretation**
 ```
            Predicted  Predicted
-              T           F
-Actual T  [[  72,        29],
-Actual F    [7185,     9919]] 
+              HR           LR
+Actual HR  [[  72,        29],
+Actual LR    [7185,     9919]] 
 ```
 
 - **Random OverSampling Model:** 
@@ -288,7 +285,9 @@ avg / total       0.99      0.87      0.70      0.93      0.78      0.62     172
 avg / total       0.99      0.94      0.92      0.97      0.93      0.87     17205
 ```
 
-
-Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
-There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+### Analysis
+Because the goal of this analysis is to effectively minimize the number of high risk credit situations.
+- Based on the accuracy scores, the easy ensemble classifier model was optimal, with an accuracy score of 93.2% 
+- Based on the confusion matrices, the model that has the least falsely classified high risk is the easy ensemble classifier with 8 high risk misclassified as low risk
+- Based on the imbalanced classification reports, the easy ensemble classifier model has the highest precision, recall, and f1(harmonic mean), indicating this model has more correctly categorized predictions than the other models
+Using the information obtained from the accuracy scores, confusion matrices, and imbalanced classification reports, the easy ensemble classifier model outperforms the other models in this analysis.

@@ -13,7 +13,9 @@ The majority (high_risk) and minority (low_risk) classes are balanced as the mod
 - **Accuracy Score:** 0.6463970560994359
   - This model was correct 64.6% of the time
 
+
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/ROS_AS.png)
+
 
 - **Confusion Matrix:** 
 ```         Predicted  Predicted
@@ -42,14 +44,14 @@ avg / total       0.99      0.58      0.71      0.73      0.64      0.41     172
 
 
 #### SMOTE
-- **Accuracy Score:**  0.6361059077142514
-  - This model was correct 63.6% of the time
+- **Accuracy Score:**  0.6586230769943224
+
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_AS.png)
 
 - **Confusion Matrix:** 
 ```
-array([[   69,    32],
-       [ 7029, 10075]], dtype=int64)
+array([[   64,    37],
+       [ 5412, 11692]], dtype=int64)
 ```
 
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_CM.png)
@@ -58,10 +60,10 @@ array([[   69,    32],
 ```
                    pre       rec       spe        f1       geo       iba       sup
 
-  high_risk       0.01      0.68      0.59      0.02      0.63      0.41       101
-   low_risk       1.00      0.59      0.68      0.74      0.63      0.40     17104
+  high_risk       0.01      0.63      0.68      0.02      0.66      0.43       101
+   low_risk       1.00      0.68      0.63      0.81      0.66      0.44     17104
 
-avg / total       0.99      0.59      0.68      0.74      0.63      0.40     17205
+avg / total       0.99      0.68      0.63      0.81      0.66      0.44     17205
 ```
 
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_CR.png)

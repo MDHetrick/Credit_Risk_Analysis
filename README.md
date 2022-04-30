@@ -173,40 +173,42 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
 
 ## Summary
 ### Accuracy Scores
-- **Random OverSampling:** 0.6464
-- **SMOTE:**  0.6586
-- **Cluster Centroids:** 0.5439
-- **SMOTEEN:** 0.6361
-- **Balanced Random Forest Classifier:** 0.7885
-- **Easy Ensemble Classifier:** 0.9317
+- Based on the accuracy scores, the easy ensemble classifier model was optimal, with an accuracy score of 93.2%. All accuracy scores are shown below
+  - **Random OverSampling:** 0.6464
+  - **SMOTE:**  0.6586
+  - **Cluster Centroids:** 0.5439
+  - **SMOTEEN:** 0.6361
+  - **Balanced Random Forest Classifier:** 0.7885
+  - **Easy Ensemble Classifier:** 0.9317
 ### Confusion Matrices
-- **Random OverSampling Model:** 
+-  Based on the confusion matrices, the model that has the least falsely classified high risk is the easy ensemble classifier with 8 high risk misclassified as low risk
+  - **Random OverSampling Model:** 
 ```        
 array([[  72,   29],
          [7185, 9919]], dtype=int64)                               
 ```
-- **SMOTE:** 
+  - **SMOTE:** 
 ```
 array([[   64,    37],
        [ 5412, 11692]], dtype=int64)
 ```
 
-- **Cluster Centroids:** 
+  - **Cluster Centroids:** 
 ```
 array([[   70,    31],
        [10347,  6757]], dtype=int64)
 ```
-- **SMOTEEN:** 
+  - **SMOTEEN:** 
 ```
 array([[   69,    32],
        [ 7029, 10075]], dtype=int64)
 ```
-- **Balanced Random Forest Classifier:** 
+  - **Balanced Random Forest Classifier:** 
 ```
 array([[   71,    30],
        [ 2153, 14951]], dtype=int64)
 ```
-- **Easy Ensemble Classifier:** 
+  - **Easy Ensemble Classifier:** 
 ```
 array([[   93,     8],
        [  983, 16121]], dtype=int64)
@@ -268,10 +270,60 @@ avg / total       0.99      0.87      0.70      0.93      0.78      0.62     172
 
 avg / total       0.99      0.94      0.92      0.97      0.93      0.87     17205
 ```
-
-### Analysis
-Because the goal of this analysis is to effectively minimize the number of high risk credit situations.
-- Based on the accuracy scores, the easy ensemble classifier model was optimal, with an accuracy score of 93.2% 
-- Based on the confusion matrices, the model that has the least falsely classified high risk is the easy ensemble classifier with 8 high risk misclassified as low risk
-- Based on the imbalanced classification reports, the easy ensemble classifier model has the highest precision, recall, and f1(harmonic mean), indicating this model has more correctly categorized predictions than the other models
-**Conclusion:** Using the information obtained from the accuracy scores, confusion matrices, and imbalanced classification reports, the easy ensemble classifier model outperforms the other models in this analysis.
+#### Precision Scores
+- The avg/total precision was the same (0.99) for all models and the low risk category (1.00), while precision of the high risk category was highest with the easy ensemble classifier (0.09).
+- **Random OverSampling:** 
+  - Avg/total: 0.99
+  - high risk: 0.01
+  - low risk: 1.00
+- **SMOTE:**  
+  - Avg/total: 0.99
+  - high risk: 0.01
+  - low risk: 0.01
+- **Cluster Centroids:** 
+  - Avg/total: 0.99
+  - high risk: 0.01
+  - low risk: 1.00
+- **SMOTEEN:** 
+  - Avg/total: 0.99
+  - high risk: 0.01
+  - low risk: 0.99
+- **Balanced Random Forest Classifier:** 
+  - Avg/total: 0.99 
+  - high risk: 0.03
+  - low risk: 1.00
+- **Easy Ensemble Classifier:** 
+  - Avg/total: 0.99
+  - high risk: 0.09
+  - low risk: 1.00
+ 
+#### Recall Scores
+- The easy ensemble classifier model has the highest recall of all categories 
+- **Random OverSampling:** 
+  - Avg/total: 0.58
+  - high risk: 0.71
+  - low risk: 0.58
+- **SMOTE:**  
+  - Avg/total: 0.68 
+  - high risk: 0.63
+  - low risk: 0.68
+- **Cluster Centroids:** 
+  - Avg/total: 0.40
+  - high risk: 0.69
+  - low risk: 0.39
+- **SMOTEEN:** 
+  - Avg/total: 0.59
+  - high risk: 0.68
+  - low risk: 0.59
+- **Balanced Random Forest Classifier:** 
+  - Avg/total: 0.70
+  - high risk: 0.87
+  - low risk: 0.70
+- **Easy Ensemble Classifier:** 
+  - Avg/total: 0.94
+  - high risk: 0.92
+  - low risk: 0.94
+#### Classification Report Summary
+The easy ensemble classifier model has the highest recall, f1(harmonic mean), and  low risk precision, indicating this model has more correctly categorized predictions than the other models. 
+### Conclusion:
+Using the information obtained from the accuracy scores, confusion matrices, and imbalanced classification reports, the easy ensemble classifier model outperforms the other models in this analysis.

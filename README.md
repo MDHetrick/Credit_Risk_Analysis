@@ -3,8 +3,7 @@
 The purpose of this analysis is to use a variety of techniques to evaluate and predict credit risk using a dataset from Lendingclub.
 
 ## Results
-### Resampling Models
-#### Random OverSampling Model
+### Random OverSampling Model
 **Model Description**
 
 The majority (high_risk) and minority (low_risk) classes are balanced as the model randomly adds instances of the minority class to the training set.
@@ -43,7 +42,7 @@ avg / total       0.99      0.58      0.71      0.73      0.64      0.41     172
   - F1 (harmonic mean): single summary statistic of precision and sensitivity - highest f1 is overall best model
 
 
-#### SMOTE
+### SMOTE
 - **Accuracy Score:**  0.6586230769943224
 
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_AS2.png)
@@ -69,7 +68,7 @@ avg / total       0.99      0.68      0.63      0.81      0.66      0.44     172
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/S_CR2.png)
 
 
-#### Cluster Centroids
+### Cluster Centroids
 
 - **Accuracy Score:** 0.544061547759079
   - This model was correct 54.4% of the time
@@ -123,8 +122,8 @@ avg / total       0.99      0.59      0.68      0.74      0.63      0.40     172
 ```
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/SM_CR.png)
 
-### Using Ensemble Classifiers to Predict Credit Risk
-#### Balanced Random Forest Classifier
+
+### Balanced Random Forest Classifier
 - **Accuracy Score:** 0.7885466545953005
   - This model was correct 78.8% of the time
 
@@ -156,7 +155,7 @@ avg / total       0.99      0.87      0.70      0.93      0.78      0.62     172
 ![Image](https://github.com/MDHetrick/Credit_Risk_Analysis/blob/main/Resources/BRFC_DF.png)
 
 
-#### Easy Ensemble Classifier
+### Easy Ensemble Classifier
 - **Accuracy Score:** 0.9316600714093861
   - This model was correct 93.2% of the time
 

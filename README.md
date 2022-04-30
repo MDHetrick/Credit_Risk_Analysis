@@ -214,62 +214,6 @@ array([[   93,     8],
        [  983, 16121]], dtype=int64)
 ```
 ### Imbalanced Classification Reports
-- **Random OverSampling Model:** 
-```
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.01      0.71      0.58      0.02      0.64      0.42       101
-   low_risk       1.00      0.58      0.71      0.73      0.64      0.41     17104
-
-avg / total       0.99      0.58      0.71      0.73      0.64      0.41     17205
-```
-
-- **SMOTE:**
-```
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.01      0.63      0.68      0.02      0.66      0.43       101
-   low_risk       1.00      0.68      0.63      0.81      0.66      0.44     17104
-
-avg / total       0.99      0.68      0.63      0.81      0.66      0.44     17205
-```
-- **Cluster Centroids:**
-```
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.01      0.69      0.39      0.01      0.52      0.28       101
-   low_risk       1.00      0.39      0.69      0.57      0.52      0.27     17104
-
-avg / total       0.99      0.40      0.69      0.56      0.52      0.27     17205
-
-```
-- **SMOTEEN:**
-```
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.01      0.68      0.59      0.02      0.63      0.41       101
-   low_risk       1.00      0.59      0.68      0.74      0.63      0.40     17104
-
-avg / total       0.99      0.59      0.68      0.74      0.63      0.40     17205
-```
-- **Balanced Random Forest Classifier:** 
-```
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.03      0.70      0.87      0.06      0.78      0.60       101
-   low_risk       1.00      0.87      0.70      0.93      0.78      0.62     17104
-
-avg / total       0.99      0.87      0.70      0.93      0.78      0.62     17205
-```
-- **Easy Ensemble Classifier:** 
-```
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.09      0.92      0.94      0.16      0.93      0.87       101
-   low_risk       1.00      0.94      0.92      0.97      0.93      0.87     17104
-
-avg / total       0.99      0.94      0.92      0.97      0.93      0.87     17205
-```
 #### Precision Scores
 - The avg/total precision was the same (0.99) for all models and the low risk category (1.00), while precision of the high risk category was highest with the easy ensemble classifier (0.09).
 - **Random OverSampling:** 
@@ -296,7 +240,6 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
   - Avg/total: 0.99
   - high risk: 0.09
   - low risk: 1.00
- 
 #### Recall Scores
 - The easy ensemble classifier model has the highest recall of all categories 
 - **Random OverSampling:** 
@@ -323,6 +266,32 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
   - Avg/total: 0.94
   - high risk: 0.92
   - low risk: 0.94
+#### F1 (harmonic mean)
+- The easy ensemble classifier model has the highest harmonic mean or all models
+- **Random OverSampling:** 
+  - Avg/total: 0.73
+  - high risk: 0.02
+  - low risk: 0.73
+- **SMOTE:**  
+  - Avg/total: 0.81
+  - high risk: 0.02
+  - low risk: 0.81
+- **Cluster Centroids:** 
+  - Avg/total: 0.56
+  - high risk: 0.01
+  - low risk: 0.57
+- **SMOTEEN:** 
+  - Avg/total: 0.74
+  - high risk: 0.02
+  - low risk: 0.74
+- **Balanced Random Forest Classifier:** 
+  - Avg/total: 0.93
+  - high risk: 0.06
+  - low risk: 0.93
+- **Easy Ensemble Classifier:** 
+  - Avg/total: 0.97
+  - high risk: 0.16
+  - low risk: 0.97
 #### Classification Report Summary
 The easy ensemble classifier model has the highest recall, f1(harmonic mean), and  low risk precision, indicating this model has more correctly categorized predictions than the other models. 
 ### Conclusion:

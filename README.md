@@ -173,7 +173,6 @@ avg / total       0.99      0.94      0.92      0.97      0.93      0.87     172
 
 ## Summary
 ### Accuracy Scores
-**Interpretation** Percent of times the model predicted the outcome correctly
 - **Random OverSampling:** 0.6464
 - **SMOTE:**  0.6586
 - **Cluster Centroids:** 0.5439
